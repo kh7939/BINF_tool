@@ -1,0 +1,3 @@
+#ignore complied file
+*.out
+__pycache__/
