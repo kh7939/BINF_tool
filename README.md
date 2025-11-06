@@ -22,6 +22,8 @@ Ribosome links amino acids together → Protein is built!
 # How to execute (Example on Linux terminal)
 ```
 python3 main.py
+gcc main.c
+./a.out
 ```
 # Docker
 - will be updated
