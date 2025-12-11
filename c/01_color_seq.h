@@ -29,9 +29,9 @@ void color_seq(char *dnaSeq, bool pause) {
 			case 'C': printf("%s%c%s", RED_ANSI, dnaSeq[i], RESET_ANSI);
 				break;
 
-			default: ;
+			default:;
 			}
 			
-			if (pause) {fflush(stdout);	usleep(50000);}
+			if (pause) {fflush(stdout);	usleep(10000);}
 		}
 	}
