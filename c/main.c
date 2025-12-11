@@ -33,11 +33,11 @@ int main() {
 		codingDNAseq[lenOfseq] = '\0'; // adding string terminator \0
 
 		char *includeATG = strstr(codingDNAseq, "ATG");
-		char afterStartCodon = includeATG + 3
+		char *afterStartCodon = includeATG + 3;
 		if (includeATG!=NULL) {
 			if ((strstr(afterStartCodon, "TAA")!=NULL || 
 				strstr(afterStartCodon, "TAG")!=NULL || 
-				strstr(afterStartCodon, "TGA")!=NULL) && strlen()) {
+				strstr(afterStartCodon, "TGA")!=NULL)) {
 				break;
 				}
 		}
