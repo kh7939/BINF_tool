@@ -4,7 +4,7 @@
 #define GREEN_ANSI "\033[32m"
 #define BLUE_ANSI "\033[34m"
 #define RESET_ANSI "\033[0m" 	 
-#define YELLOW_BACKGROUND "\033[43m"
+#define ORGANIC_BROWN_BACKGROUND "\033[48;2;227;249;166m"
 
 //Using const
 /*

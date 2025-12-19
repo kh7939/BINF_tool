@@ -1,12 +1,14 @@
 void translation(*mRNA) {
-	startCodon = "AUG";
+	char startCodon = "AUG";
+	char stopCodons[3][4] = {"UAA", "UAG", "UGA"} 
 	
-	findStartCodon = strstr(mRNA, startCodon);
+	char *findStartCodon = strstr(mRNA, startCodon);
+	char *findUAA = strstr(findStartCodon, stopCodons[0])
+	char *findUAG = strstr(findStartCodon, stopCodons[1])
+	char *findUGA = strstr(findStartCodon, stopCodons[2])
 
-	startCodonIndex = strlen(mRNA) - strlen(findStartCodon);
-
-	for (int i=(startCodon -1), , i = i+3) {
-		
+	while (true) {
+		if 
 		}
 	}
 
