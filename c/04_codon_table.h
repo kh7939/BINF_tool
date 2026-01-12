@@ -1,3 +1,8 @@
+#ifndef CODON_TABLE_04_H
+#define CODON_TABLE_04_H
+
+#include "01_color_seq.h"
+
 struct codon {
 	char codons[4];
 	char oneLetter;
@@ -38,11 +43,17 @@ char lookup(char *codon) {
 
 void translation(char *mRNA) {
 	char *afterStart = strstr(mRNA, "AUG");
+	int whereToStart = strlen(mRNA) - strlen(afterStart);
+
+	for (int i=0; i<whereToStart; i++) {
+		printf(" ");
+		} 	
 	for (int i=0; afterStart[i]!='\0'; i+=3 ) {
 		char amino = lookup(&afterStart[i]);
+		printf("%s%c%s  ", LAVENDER_BOLD_ANSI, amino, RESET_ANSI);
 		if (amino == '*') break;
-		printf("%c", amino);
 		}
 	printf("\n");
 	}
 
+#endif

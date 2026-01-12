@@ -56,27 +56,28 @@ int main() {
 	strcpy(templateDNAseq, codingDNAseq); // making a copy of the template DNA seq to use color_seq easily
 	
 	getchar();
-	printf("\n[01] Random DNA Strands\n\n");
+	printf("\n[01] Random DNA Strands\n");
+	getchar();
 	printf("5' "); color_seq(codingDNAseq, false); printf(" 3' Coding DNA Strand (Cell Nucleus)\n");
 	complementary_pairing(templateDNAseq); // pairing by modifying templateDNAseq which copied from codingDNAseq
 	printf("3' "); color_seq(templateDNAseq, false); printf(" 5' %sTemplate DNA Strand (Cell Nucleus)%s\n", MALIBU_BOLD_ANSI, RESET_ANSI);
 
 	getchar();
-	printf("[02] Transcription; mRNA strand; T -> U (Cell Nucleus)\n\n");
+	printf("[02] Transcription; mRNA strand; T -> U (Cell Nucleus)\n");
+	getchar();
 	printf("3' "); color_seq(templateDNAseq, false); printf(" 5' %sTemplate DNA Strand (Cell Nucleus)%s\n", MALIBU_BOLD_ANSI, RESET_ANSI);
 	dna_to_rna(codingDNAseq); // T -> U; transcription
 	printf("5' "); color_seq(codingDNAseq, true); printf(" 3' %smRNA Strand (Cell Nucleus)%s\n", CORN_BOLD_ANSI, RESET_ANSI);
 	
 	getchar();
-	printf("[03] mRNA transport (Cell Nucleus -> Cytoplasm Ribosome)\n");
+	printf("[03] mRNA transport (Cell Nucleus -> Cytoplasm Ribosome)");
+	getchar();
 
 	getchar();
 	printf("[04] tRNA begins Translation (RNA -> Codons)\n");
-	printf("5' "); color_seq(codingDNAseq, false); printf(" 3' %smRNA Strand (Ribosome in Cytoplasm)%s\n", CORN_BOLD_ANSI, RESET_ANSI);
-	
 	getchar();
-	
-	translation(codingDNAseq);		
+	printf("5' "); color_seq(codingDNAseq, false); printf(" 3' %smRNA Strand (Ribosome in Cytoplasm)%s\n", CORN_BOLD_ANSI, RESET_ANSI);
+	printf("   "); translation(codingDNAseq);		
 	
 	return 0;
 	}

@@ -1,3 +1,6 @@
+#ifndef COLOR_SEQ_01_H
+#define COLOR_SEQ_01_H
+
 //Using #define
 #define RED_ANSI "\033[31m"
 #define YELLOW_ANSI "\033[33m"
@@ -6,6 +9,7 @@
 #define RESET_ANSI "\033[0m" 	 
 #define CORN_BOLD_ANSI "\033[1;38;5;184m"
 #define MALIBU_BOLD_ANSI "\033[1;38;2;135;175;255m"
+#define LAVENDER_BOLD_ANSI "\033[1;38;5;135m"
 
 //Using const
 /*
@@ -36,3 +40,5 @@ void color_seq(char *dnaSeq, bool pause) {
 			if (pause) {fflush(stdout);	usleep(10000);}
 		}
 	}
+	
+#endif
