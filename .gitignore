@@ -1,3 +1,2 @@
-#ignore complied file
-*.out
+#ignore pycache file
 __pycache__/
