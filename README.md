@@ -1,6 +1,5 @@
 # Introduction
 A tool that I have been working on. It will generate some useful output with DNA sequence input.
-![cd_tool_ex](https://github.com/user-attachments/assets/a05075eb-0c59-4108-a513-bca89303fa1b)
 <img width="512" height="245" alt="image" src="https://github.com/user-attachments/assets/73b11618-7002-49f5-953d-4e74e16a1efc" />
 
 🧬 Central Dogma: DNA → mRNA → Protein
@@ -9,12 +8,6 @@ DNA stays in the nucleus (safe, master copy).
 Ribosome links amino acids together → Protein is built!
 
 # How to execute (Example on Linux terminal)
-For python
 ```
 python3 main.py
-```
-For C
-```
-gcc main.c
-./a.out
 ```
